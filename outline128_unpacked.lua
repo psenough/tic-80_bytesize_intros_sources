@@ -1,3 +1,7 @@
+-- title:  outline 128b
+-- author: ps
+-- desc:   128b intro for Outline 2021
+-- script: lua
 
 t=0
 x=240
