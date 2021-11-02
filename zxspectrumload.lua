@@ -36,19 +36,25 @@ function TIC()
 			rect(i%13//8*255+20,20,200,96,s[i][9])
 			
 			-- print string
+			-- using highcase L as variable name instead of random other letter
+			-- saves 1 byte thanks to packer entropy heatmap shenanigans, since it's already used as a char a few times elsewhere
 			L=print(s[i][14], 21, 21+89*s[i][3], 1, true)
 			
 			-- cursor background
+			-- only shows up when s[i][12] is 1
 			rect(L+21, 20+89*s[i][3],
 				7*s[i][12],
 				7,
 				time()*s[i][12]//400%2-1)
 			
 			-- cursor letter
+			-- multiplying by 1000 and subtracting 1000 is to ensure it's printed outside the screen when the timeline says it shouldnt be printed
+			-- it's less bytes then having and if statement
 			print('L',L+22,1021+89*s[i][3]-s[i][12]*1e3,time()*s[i][12]//400%2)
 			
 			-- math for the 2 parts of the loading sound
 			-- blue and yellow sounds a bit weird couz it's not using math.random and accurate behavior of double wavelength distinction between 1 and 0
+			-- proper spectrum sound implementation of that part is left as an exercise for the reader
 			L = math.sin(s[i+1][2]*1920)*99 +
 			    math.sin(s[i][2]*960)*(time()%3//2<<5)
 
@@ -65,7 +71,9 @@ function TIC()
 				
   	end
 	
-	-- loading sound 
+	-- loading sound, not using the whole audio registry which makes the waveform sound dirty so i rolled with it
+	-- makes the math of L all weird but hei, trial and error worked to find the right tune, more or less
+	-- one day i'll learn proper sound programming instead but not today
 	poke(65436+i%9,L)
 	end
 end
