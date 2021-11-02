@@ -1,3 +1,8 @@
+-- title:  intergalactic geodesic transmutation
+-- author: ps
+-- desc:   256b intro for Lovebyte 2021
+-- script: lua
+
 h=136
 w=256
 b=0x03FF8
