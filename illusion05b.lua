@@ -1,3 +1,8 @@
+-- title:  inercia water worm
+-- author: ps
+-- desc:   256b intro for Inercia 2021
+-- script: lua
+
 pal={9,9,9,1,10,10,10}
 poke(0x03FF8,12)
 function TIC()
