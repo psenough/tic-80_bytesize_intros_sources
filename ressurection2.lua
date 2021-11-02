@@ -1,3 +1,7 @@
+-- title:  ressurections
+-- author: ps
+-- desc:   256b intro for Lovebyte Battlegrounds 2021
+-- script: lua
 
 a = {}
 l = {}
