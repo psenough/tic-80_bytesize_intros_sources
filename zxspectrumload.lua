@@ -31,7 +31,8 @@ function TIC()
   		-- enact timeline
 		if time()/1e3>s[i][1] and time()/1e3<s[i+1][1] then
 			
-			-- background, only sometimes cleared
+			-- zx spectrum background, smaller then our viewport, to ensure big fat borders like the spectrum
+			-- it's only sometimes cleared, just to get the 2 texts on the final scene of the r tape loading error 
 			rect(i%13//8*255+20,20,200,96,s[i][9])
 			
 			-- print string
