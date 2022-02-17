@@ -1,5 +1,5 @@
 -- author: ps
--- title: the untz
+-- title: the untz untz untz
 -- lang: lua
 -- desc: 512b intro for lovebyte'22
 
