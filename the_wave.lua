@@ -1,6 +1,6 @@
--- title:  game title
--- author: game developer
--- desc:   short description
+-- title:  the wave
+-- author: ps
+-- desc: executable graphics for lovebyte 2022
 -- script: lua
 
 t=0
