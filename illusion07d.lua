@@ -1,3 +1,6 @@
+-- author: ps
+-- title: The Silver Bullet
+-- desc: 256b for lovebyte 2022
 
 for i=0,15 do
 	poke(0x03FC0+i*3,i*10)
