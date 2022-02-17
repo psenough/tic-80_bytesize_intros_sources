@@ -1,4 +1,6 @@
-
+-- author: ps
+-- title: the chasm
+-- desc: executable graphics for lovebyte 2022
 
 -- https://twitter.com/AkiyoshiKitaoka/status/1409841093324144646/photo/1
 
