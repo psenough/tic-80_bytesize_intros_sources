@@ -1,6 +1,7 @@
 -- title: Fabracid
 -- author: ps + luchak
 -- desc: 1kb intro for Lovebyte 2023
+-- license: MIT
 -- script: lua
 
 frame=0
